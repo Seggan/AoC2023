@@ -1,0 +1,11 @@
+let input = io.stdin().readAll().decode()
+let lines = input.split("\n")
+let numbers = lines.map(fn(line)
+    if line.isEmpty()
+        return 0
+    end
+    let digits = line.filter(string.isDigit)
+    let num = digits.first() + digits.last()
+    return number.parse(num)
+end)
+print(numbers.sum())
